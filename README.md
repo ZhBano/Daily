@@ -1,2 +1,1 @@
-# Daily
-切图仔日常-Memo/knowledge sharing/interview guide.Be as accurate, complete, and clear as possible.Ongoing updates.Click Star if you like
+## 切图仔日常-备忘录/知识共享/面试指南
