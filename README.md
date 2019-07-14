@@ -10,7 +10,10 @@
     - <a href="./element-admin/登录权限与侧边栏.md">登录权限与侧边栏</a>
 3. webpack
     - <a href="./webpack/webpack配置.md">webpack配置</a>
-4. 杂章  
+4. React
+     - Taro 
+        - <a href="./Taro/Redux初体验.md">Taro-Redux初体验</a>
+5. 杂章  
     - <a href="./面试题/面试题.md">自己总结的一些前端面试题</a>
      - <a href="./pages/object.assgin.md">Object.assgin()方法的使用</a>
       - <a href="./pages/Promise.md">Promise的用法</a>
