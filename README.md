@@ -18,7 +18,7 @@
   - <a href="./Taro/Redux初体验.md">Taro-Redux初体验</a>
 # 杂章  
  - <a href="./面试题/面试题.md">自己总结的一些前端面试题</a>
- - <a href="./pages/Object.assgin.md">浅析ES6 Object.assgin</a>
+ - <a href="./pages/ObjectAssgin.md">浅析ES6 Object.assgin</a>
  - <a href="./pages/Promise.md">浅析Promise的用法</a>
 
 
