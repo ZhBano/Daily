@@ -10,6 +10,8 @@
 - <a href="./element-admin/安装和路由.md">安装和路由问题</a>
 - <a href="./element-admin/table和form表单.md">table和form表单用法</a>
 - <a href="./element-admin/登录权限与侧边栏.md">登录权限与侧边栏</a>
+# TypeScript学习
+- <a href="./TypeScript/基本数据类型.md">定义基本数据类型</a>
 # webpack的相关文章
 - <a href="./webpack/webpack配置.md">webpack配置</a>
 # React的相关文章
