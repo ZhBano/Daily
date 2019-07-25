@@ -15,6 +15,7 @@
 # webpack的相关文章
 - <a href="./webpack/webpack配置.md">webpack配置</a>
 # React的相关文章
+-  <a href="./React/README.md">React简单总结</a>
 - <a href="./React/初始Redux.md">初始Redux</a>
  ## Taro 
   - <a href="./Taro/Redux初体验.md">Taro-Redux初体验</a>
