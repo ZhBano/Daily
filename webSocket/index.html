@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>webSocket</title>
+</head>
+<body>  
+    <input type="text" id="test">
+    <button id="btn">发送消息</button>
+    <ul id="msg"></ul>
+    <script>
+        //创建ws连接 需要开启服务器
+        let ws=new WebSocket('ws://localhost:8080');
+        console.log(ws) 
+
+        //当网络连接建立时触发该事件
+        ws.onopen=()=>{
+            console.log('已连接')
+        }
+        
+        //监听服务器广播过来的消息
+        ws.onmessage= msg => {
+            console.log(msg.data)
+            document.querySelector('#msg').innerHTML +=`<li>${msg.data}</li>`
+        }
+        
+        let val =document.querySelector('#test')
+        document.getElementById('btn').onclick=()=>{
+            // console.log(val.value)
+            ws.send(val.value)
+        }
+
+    </script>
+</body>
+</html>
