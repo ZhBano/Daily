@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <script src="https://cdn.socket.io/socket.io-1.4.4.js"></script>
+</head>
+
+<body>
+    <input id="txt"/>
+    <button id="btn">发送</button>
+    <ul id="msg"></ul>
+    <script>
+        //创建连接
+        let socket = io('http://localhost:8081')    
+        console.log(socket)
+
+        //监听服务器传来的信息
+        socket.on('news',(data)=>{
+            console.log(data)
+        })
+        
+        //发送信息给服务器
+        socket.emit('client',{client:'服务器接收'})
+
+        //简易聊天
+        let btn =document.querySelector('#btn')
+        let txt =document.querySelector('#txt')
+        // 第一种
+        btn.onclick=()=>{
+            let val =txt.value
+            socket.emit('chat',{msg:val})
+        }
+        socket.on('serveChat',data=>{
+            document.querySelector('#msg').innerHTML +=`<li>${data.meg}</li>`
+        })
+
+        // 第二种 
+        // 当时没有去看官方文档 一看发现是有一个回调可以返回信息的
+        // 第三个参数接收服务器返回的回调
+        socket.emit('chat',{msg:val},data=>{
+                document.querySelector('#msg').innerHTML +=`<li>${data}</li>`
+            })
+    </script>
+   
+</body>
+</html>
