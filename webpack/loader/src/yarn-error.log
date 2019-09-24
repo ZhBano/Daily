@@ -1,0 +1,31 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Zbano\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add sass-loader -D
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Zbano\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\bin;C:\Users\Zbano\AppData\Roaming\npm;
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\Zbano\AppData\Local\Yarn\Cache\v4\npm-inherits-2.0.1-b17d08d326b4423e568eff719f91b0b1cbdf69f1\node_modules\inherits\package.json' -> 'c:\Users\Zbano\Desktop\Daily\webpack\loader\src\node_modules\assert\node_modules\inherits\package.json'
+
+npm manifest: 
+  {
+    "devDependencies": {
+      "node-sass": "^4.12.0",
+      "webpack": "^4.40.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
