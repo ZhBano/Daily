@@ -25,6 +25,6 @@
  - <a href="./pages/Promise.md">浅析Promise的用法</a>
  - <a href="./webSocket/webSocket.md">WebSocket</a>
  - <a href="./webSocket/socket.md">socket.io</a>
-
+ - <a href="./pages/this的指向.md">浅析this的指向问题</a>
 
 
