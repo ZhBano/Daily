@@ -1,3 +1,8 @@
+# webpack的基本配置
+
+
+
+
 # 安装
 
 gulp全局安装 gulp的命令
@@ -28,20 +33,34 @@ yarn add webpack --global
 
 
 ```js
-// require
-const path = require('path');
-// 导出对象
+const path =require('path')
+
 module.exports = {
-    // 定义入口 建议使用相对路径 这份文件将会引入被webpack后续给打包
-    entry: './input/index.js',
-    // 定义出口文件
-    output: {
-        // 输出的文件夹路径
-        path: path.resolve(__dirname, 'output'),
-        // 定义输出的文件名
-        filename: 'bundle.js'
+    mode: 'production',  //模式
+    
+    //入口
+    //这种方式则会生成两个js文件
+    entry:{ 
+       index: './src/index.js',
+       second:'./src/second.js'
+    },
+      output:{
+        filename:'[name].js',
+        path:path.join(__dirname,'dist')
     }
-};
+
+
+    // 数组方式会合并到一个js里面
+    // entry:[
+    //      './src/index.js',
+    //     './src/second.js'
+    // ],
+    // output:{
+    //     filename:'index.js',
+    //     path:path.join(__dirname,'dist')
+    // }
+}
+
 ```
 
 # 编译
