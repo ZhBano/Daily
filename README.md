@@ -16,6 +16,8 @@
 - <a href="./webpack/demo1/README.md">webpack基本配置</a>
 - <a href="./webpack/demo2/webpack.config.js">Loader的使用</a>
 - <a href="./webpack/demo3/webpack.config.js">插件的使用</a>
+- <a href="./webpack/demo4/webpack.config.js">热更新使用</a>
+
 # React的相关文章
 -  <a href="./React/README.md">React简单总结</a>
 - <a href="./React/初始Redux.md">初始Redux</a>
